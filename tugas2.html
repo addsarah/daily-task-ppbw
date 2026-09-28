@@ -7,15 +7,16 @@
     <!-- FITUR 1: Favicon -->
     <link rel="icon" href="https://images.nasa.gov/assets/images/nasa_logo-large.png?as=webp" type="image/x-icon">
     <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
     <!-- FITUR 2: Semantic HTML Tags -->
-    <header>
+    <header data-aos="fade-down">
         <!-- FITUR 3: Implementasi Flexbox Layout -->
         <div class="navbar">
-            <h2>GameWeb<span class="highlight-text">.Dev</span></h2>
-            <nav>
+            <h2 data-aos="fade-right" data-aos-delay="100">GameWeb<span class="highlight-text">.Dev</span></h2>
+            <nav data-aos="fade-right" data-aos-delay="200">
                 <a href="#">Beranda</a>
                 <a href="#">Fitur</a>
                 <a href="#">Kontak</a>
@@ -26,18 +27,18 @@
     <!-- FITUR 4: Background Gradients -->
     <section class="hero">
         <!-- FITUR 5: Animasi CSS (@keyframes) -->
-        <h1 class="animated-text">Tugas 20 Fitur Dasar</h1>
+        <h1 class="animated-text" data-aos="zoom-in" data-aos-duration="1000">Tugas 20 Fitur Dasar</h1>
         <!-- FITUR 6: Tooltip statis menggunakan Pseudo-elements -->
-        <p>Mendemonstrasikan pemahaman struktural HTML dan <span class="tooltip">CSS Modern</span>.</p>
+        <p data-aos="fade-up" data-aos-delay="300"> Mendemonstrasikan pemahaman struktural HTML dan <span class="tooltip">CSS Modern</span>.</p>
     </section>
 
     <!-- LAYOUT DASHBOARD (Membagi konten menjadi kiri dan kanan) -->
     <section class="dashboard-layout">
         <!-- PANEL UTAMA (KIRI) -->
-        <div class="main-panel">
-            <h2>Koleksi Media</h2>
+        <div class="main-panel" data-aos="fade-right" data-aos-delay="100">
+            <h2 data-aos="fade-down" data-aos-delay="100">Koleksi Media</h2>
             <!-- FITUR 7: Video Player 1 -->
-            <div class="media-item">
+            <div class="media-item" class="media-item" data-aos="zoom-in" data-aos-delay="200">
                 <h3>Video</h3>
                 <div class="iframe-container">
                     <iframe src="https://www.youtube.com/embed/5HLA5tR57EU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="styled-iframe"></iframe>
@@ -47,7 +48,7 @@
             
         </div>
         <!-- PANEL SAMPING (KANAN) -->
-        <div class="side-panel">
+        <div class="side-panel" data-aos="fade-left" data-aos-delay="200">
             <!-- FITUR 9: Audio Player -->
             <div class="audio-container">
                 <h3>Efek Suara</h3>
@@ -57,7 +58,7 @@
                 </audio>
             </div>
             <!-- FITUR 10: Tag Time Dinamis -->
-            <div class="time-card">
+            <div class="time-card" data-aos="fade-left" data-aos-delay="200">
                 <h3>Waktu Saat Ini</h3>
                 <time id="time-container" datetime="">
                     <h1 id="current-time">00:00:00</h1>
@@ -65,7 +66,7 @@
                 </time>
             </div>
             <!-- FITUR 8: Implementasi Responsive Image -->
-            <div class="image-container">
+            <div class="image-container" data-aos="fade-left" data-aos-delay="300" data-tilt data-tilt-max="10" data-tilt-speed="400">
                 <h3>Foto</h3>
                 <img src="https://images-assets.nasa.gov/image/carina_nebula/carina_nebula~orig.png" alt="Carina Nebula" class="responsive-img">
                 <p class="image-caption">
@@ -78,17 +79,17 @@
     <!-- FITUR 11: Implementasi CSS Grid Layout -->
     <section class="grid-container">
         <!-- FITUR 12: Integrasi Box Shadow, Border Radius, & Hover -->
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="100" data-tilt data-tilt-max="5" data-tilt-speed="400">
             <div class="card-icon">[P]</div>
             <h3>Performa</h3>
             <p>Layout menggunakan CSS Grid yang ringan dan responsif.</p>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="200" data-tilt data-tilt-max="5" data-tilt-speed="400">
             <div class="card-icon">[A]</div>
             <h3>Animasi</h3>
             <p>Interaktivitas halus mengandalkan CSS Transitions.</p>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="300" data-tilt data-tilt-max="5" data-tilt-speed="400">
             <div class="card-icon">[S]</div>
             <h3>Struktur</h3>
             <p>Penulisan semantik yang rapi untuk skalabilitas.</p>
@@ -96,45 +97,45 @@
     </section>
 
     <!-- FITUR 15: CSS-Only Accordion -->
-    <section class="accordion-section">
+    <section class="accordion-section" data-aos="fade-up">
         <h2>FAQ (CSS-Only Accordion)</h2>
-        <details>
+        <details data-aos="zoom-in" data-aos-delay="100">
             <summary>Apakah ini menggunakan JavaScript?</summary>
             <p>Untuk akordion ini, tidak. Ini memanfaatkan tag HTML5 details dan summary.</p>
         </details>
-        <details>
+        <details data-aos="zoom-in" data-aos-delay="200">
             <summary>Bagaimana dengan responsivitas?</summary>
             <p>Diatur sepenuhnya melalui CSS Media Queries.</p>
         </details>
     </section>
 
-    <section class="form-section">
-        <h2>Formulir & Custom Input</h2>
+    <section class="form-section" data-aos="fade-up">
+        <h2 data-aos="fade-right">Formulir Request</h2>
         <!-- FITUR 16: Form Styling Terintegrasi -->
-        <input type="text" placeholder="Masukkan nama...">
-        <input type="email" placeholder="Masukkan email...">
+        <input type="text" placeholder="Masukkan nama..." data-aos="fade-up" data-aos-delay="100">
+        <input type="email" placeholder="Masukkan email..." data-aos="fade-up" data-aos-delay="200">
 
         <!-- FITUR 18: Custom Checkbox UI -->
-        <label class="custom-checkbox">
+        <label class="custom-checkbox" data-aos="fade-up" data-aos-delay="300">
             <input type="checkbox">
             <span class="checkmark"></span>
-            Saya setuju untuk berhenti merombak desain dan mulai mengerjakan Game Loop.
+            Saya setuju terhadap tnc.
         </label>
-        <button class="styled-button">Kirim Formulir</button>
+        <button class="styled-button" data-aos="fade-up" data-aos-delay="400">Kirim Formulir</button>
     </section>
 
-    <section class="extra-features">
-        <h2>Quotation</h2>
-        <blockquote class="styled-quote">
+    <section class="extra-features" data-aos="fade-up">
+        <h2 data-aos="fade-right">Quotation</h2>
+        <blockquote class="styled-quote" data-aos="flip-up" data-aos-delay="200">
             "I'm good, Rooster. I'm really good."
             - Lt. Jake 'Hangman' Seresin on Top Gun: Maverick (2022)
         </blockquote>
     </section>
 
     <!-- FITUR 17: Tabel Data Terstruktur -->
-    <section class="table-section">
-        <h2>Data Pemain</h2>
-        <table class="styled-table">
+    <section class="table-section" data-aos="fade-up">
+        <h2 data-aos="fade-right">Data Pemain</h2>
+        <table class="styled-table" data-aos="zoom-in" data-aos-delay="100">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -158,30 +159,40 @@
     </section>
 
     <!-- FITUR 19: Styling list Zebra -->
-    <ul class="zebra-list">
-        <li>Baris Data Ganjil</li>
-        <li>Baris Data Genap</li>
-        <li>Baris Data Ganjil</li>
-        <li>Baris Data Genap</li>
+    <ul class="zebra-list" data-aos="fade-up">
+        <li data-aos="fade-right" data-aos-delay="100">Baris Data Ganjil</li>
+        <li data-aos="fade-left" data-aos-delay="200">Baris Data Genap</li>
+        <li data-aos="fade-right" data-aos-delay="300">Baris Data Ganjil</li>
+        <li data-aos="fade-left" data-aos-delay="400">Baris Data Genap</li>
     </ul>
 
     <!-- FITUR TAMBAHAN: Mini Game Canvas dengan Tombol Kontrol -->
-    <section class="game-section">
+    <section class="game-section" data-aos="zoom-in" data-aos-delay="200">
         <h2>Mini Game: Tangkap Kotak Merah</h2>
         <p class="game-instruction">Gunakan tombol panah <strong>Kiri / Kanan</strong> atau huruf <strong>A / D</strong> untuk menggerakkan balok.</p>
         
         <!-- Tombol Kontrol Game (Play, Pause, Restart) -->
-        <div class="game-controls">
+        <div class="game-controls" data-aos="fade-up" data-aos-delay="100">
             <button id="btnPlay" class="game-btn btn-play" onclick="window.gameInstance.play()">Mainkan</button>
             <button id="btnPause" class="game-btn btn-pause" onclick="window.gameInstance.pause()">Jeda</button>
             <button id="btnRestart" class="game-btn btn-restart" onclick="window.gameInstance.restart()">Ulangi</button>
         </div>
 
-        <div class="canvas-wrapper">
+        <div class="canvas-wrapper" data-aos="fade-up" data-aos-delay="200">
             <canvas id="gameCanvas"></canvas>
         </div>
     </section>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <script>
+        // Inisialisasi AOS Animation dengan pengaturan jeda alami
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
     <script src="tugas2.js"></script>
 </body>
 </html>
