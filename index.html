@@ -3,27 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Menu - Tugas PGBW</title>
-    <!-- Menghubungkan ke file CSS khusus menu -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Import Google Font: Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Main Menu - Roadmap PGBW</title>
+    <!-- AOS CSS & Google Font Poppins -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Roadmap Game Web</h1>
-    <p>Pilih tugas pertemuan untuk dijalankan</p>
+    <header data-aos="fade-down">
+        <div class="navbar">
+            <h2 data-aos="fade-right" data-aos-delay="100">Roadmap<span class="highlight-text">.Dev</span></h2>
+        </div>
+    </header>
 
-    <div class="menu-container">
-        <a href="pertemuan1.html" class="menu-btn">Pertemuan 1: Canvas Dasar</a>
-        <a href="pertemuan2.html" class="menu-btn">Pertemuan 2: Player Movement</a>
-        <a href="pertemuan3.html" class="menu-btn">Pertemuan 3: Game Loop & Collision</a>
-        <a href="tugas2.html" class="menu-btn">Tugas 2</a>
-        <!-- Tombol Pertemuan 4 tetap terkunci sampai logikanya Anda selesaikan -->
-        <a href="#" class="menu-btn disabled-btn">Pertemuan : KOSONG</a>
-    </div>
+    <section class="hero">
+        <h1 class="animated-text" data-aos="zoom-in" data-aos-duration="1000">Tugas Game Web</h1>
+        <p data-aos="fade-up" data-aos-delay="300">Kumpulan Tugas berdasarkan Pertemuan</p>
+    </section>
 
+    <!-- LAYOUT DASHBOARD -->
+    <section class="dashboard-layout">
+        
+        <!-- PANEL UTAMA (KIRI): Tempat Tombol Menu -->
+        <div class="main-panel" data-aos="fade-right" data-aos-delay="100">
+            <h2 data-aos="fade-down" data-aos-delay="100">Tugas & Pertemuan</h2>
+            <div class="menu-container" data-aos="zoom-in" data-aos-delay="200">
+                <a href="pertemuan1.html" class="menu-btn">Pertemuan 1: Canvas Dasar</a>
+                <a href="pertemuan2.html" class="menu-btn">Pertemuan 2: Player Movement</a>
+                <a href="pertemuan3.html" class="menu-btn">Pertemuan 3: Game Loop & Collision</a>
+                <a href="tugas2.html" class="menu-btn">Tugas 2: 20 Fitur Dasar</a>
+                <!-- Tombol Pertemuan 4 tetap mati -->
+                <a href="#" class="menu-btn disabled-btn">Pertemuan 4: Score & Timer (KOSONG)</a>
+            </div>
+        </div>
+
+        <!-- PANEL SAMPING (KANAN): Elemen Kosmetik -->
+        <div class="side-panel" data-aos="fade-left" data-aos-delay="200">
+            <div class="card" data-tilt data-tilt-max="5" data-tilt-speed="400">
+                <div class="card-icon">[!]</div>
+                <h3>Status Saat Ini</h3>
+                <p>Test Lorem Ipsum</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- AOS & Vanilla Tilt JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
 </body>
 </html>
