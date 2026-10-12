@@ -1,0 +1,58 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+h1 {
+    color: #00ff88;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+p {
+    color: #888;
+    margin-bottom: 30px;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.menu-btn {
+    display: block;
+    text-decoration: none;
+    color: #121212;
+    background-color: #f5f2f2;
+    padding: 15px 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.menu-btn:hover {
+    background-color: #00ff88;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 255, 136, 0.3);
+}
+
+/* Kelas khusus untuk tombol yang belum selesai */
+.disabled-btn {
+    background-color: #333 !important;
+    color: #555 !important;
+    cursor: not-allowed;
+    box-shadow: none !important;
+    pointer-events: none;
+}
