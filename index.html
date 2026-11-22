@@ -13,7 +13,11 @@
 
     <header data-aos="fade-down">
         <div class="navbar">
-            <h2 data-aos="fade-right" data-aos-delay="100" href="https://addsarah.github.io/daily-task-ppbw/">GameWeb<span class="highlight-text">.Dev</span></h2>
+            <h2 data-aos="fade-right" data-aos-delay="100">
+                <a href="https://addsarah.github.io/daily-task-ppbw/" class="brand-link">
+                    GameWeb<span class="highlight-text">.Dev</span>
+                </a>
+            </h2>
         </div>
     </header>
 
@@ -29,21 +33,25 @@
         <div class="main-panel" data-aos="fade-right" data-aos-delay="100">
             <h2 data-aos="fade-down" data-aos-delay="100">Tugas & Pertemuan</h2>
             <div class="menu-container" data-aos="zoom-in" data-aos-delay="200">
-                <a href="pertemuan1.html" class="menu-btn">Pertemuan 1: Canvas Dasar</a>
-                <a href="pertemuan2.html" class="menu-btn">Pertemuan 2: Player Movement</a>
-                <a href="pertemuan3.html" class="menu-btn">Pertemuan 3: Game Loop & Collision</a>
+                <!-- Semua file dengan kata 'pertemuan' berada di dalam folder tugas/ -->
+                <a href="tugas/pertemuan1.html" class="menu-btn">Pertemuan 1: Canvas Dasar</a>
+                <a href="tugas/pertemuan2.html" class="menu-btn">Pertemuan 2: Player Movement</a>
+                <a href="tugas/pertemuan3.html" class="menu-btn">Pertemuan 3: Game Loop & Collision</a>
+                <a href="tugas/pertemuan4.html" class="menu-btn">Pertemuan 4: Score, Timer & Game State</a>
+                <a href="tugas/pertemuan5.html" class="menu-btn">Pertemuan 5: UI/UX, Audio & Polish</a>
+                <a href="tugas/pertemuan6.html" class="menu-btn">Pertemuan 6: Final Web Game</a>
+                
+                <!-- File non-pertemuan di root (ubah ke tugas/tugas2.html jika file ini ada di dalam folder tugas/) -->
                 <a href="tugas2.html" class="menu-btn">Tugas 2: 20 Fitur Dasar</a>
-                <!-- Tombol Pertemuan 4 tetap mati -->
-                <a href="#" class="menu-btn disabled-btn">Pertemuan 4: Score & Timer (KOSONG)</a>
             </div>
         </div>
 
-        <!-- PANEL SAMPING (KANAN): Elemen Kosmetik -->
+        <!-- PANEL SAMPING (KANAN): Ringkasan Progres -->
         <div class="side-panel" data-aos="fade-left" data-aos-delay="200">
             <div class="card" data-tilt data-tilt-max="5" data-tilt-speed="400">
-                <div class="card-icon">[!]</div>
-                <h3>Status Saat Ini</h3>
-                <p>Test Lorem Ipsum</p>
+                <div class="card-icon">6/6</div>
+                <h3>Status Progres</h3>
+                <p>Seluruh tugas Pertemuan 1 hingga Final Web Game (Pertemuan 6) dan Tugas 2 telah terhubung.</p>
             </div>
         </div>
 

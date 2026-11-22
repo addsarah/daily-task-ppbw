@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: #111;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.status {
+  min-height: 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffd700;
+}
+
+.status.danger {
+  color: #ff4d4d;
+}
+
+canvas {
+  border: 3px solid #fff;
+  background: #222;
+}

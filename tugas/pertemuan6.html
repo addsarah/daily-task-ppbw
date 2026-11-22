@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pertemuan 6 - Final Web Game: Catch the Coin</title>
+  <link rel="stylesheet" href="pertemuan6.css">
+</head>
+<body>
+  <main class="game-container">
+    <header class="hud">
+      <div class="hud-box">
+        <span class="hud-label">SCORE</span>
+        <span id="scoreDisplay" class="hud-value">0 / 120</span>
+      </div>
+      <div class="hud-box">
+        <span class="hud-label">BEST</span>
+        <span id="bestDisplay" class="hud-value">0</span>
+      </div>
+      <div class="hud-box">
+        <span class="hud-label">TIME</span>
+        <span id="timeDisplay" class="hud-value">45s</span>
+      </div>
+      <button id="pauseBtn" class="btn btn-secondary hidden" type="button">PAUSE</button>
+    </header>
+
+    <section class="canvas-stage">
+      <canvas id="gameCanvas" width="800" height="500"></canvas>
+
+      <div id="startOverlay" class="overlay">
+        <h1>CATCH THE COIN</h1>
+        <p class="tagline">Final Web Game — Edisi Patroli</p>
+        <div class="guide-box">
+          <p><strong>Kontrol:</strong> Arrow Keys / WASD | <strong>Jeda:</strong> Tombol P</p>
+          <p><strong>Target:</strong> Kumpulkan 120 poin dalam 45 detik.</p>
+          <p><strong>Aturan:</strong> Koin +20 poin | Kena Rintangan Merah -15 poin.</p>
+        </div>
+        <button id="startBtn" class="btn btn-primary" type="button">MULAI BERMAIN</button>
+      </div>
+
+      <div id="pauseOverlay" class="overlay hidden">
+        <h2>GAME DIJEDA</h2>
+        <p class="tagline">Tekan LANJUTKAN atau tombol P untuk kembali bermain.</p>
+        <div class="overlay-actions">
+          <button id="resumeBtn" class="btn btn-primary" type="button">LANJUTKAN</button>
+          <button id="pauseRestartBtn" class="btn btn-warning" type="button">ULANGI</button>
+        </div>
+      </div>
+
+      <div id="endOverlay" class="overlay hidden">
+        <h2 id="endHeading">GAME OVER</h2>
+        <p id="endDetail" class="tagline">Skor Akhir: 0</p>
+        <button id="restartBtn" class="btn btn-warning" type="button">MAIN LAGI</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="pertemuan6.js"></script>
+</body>
+</html>

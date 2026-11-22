@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pertemuan 5 - UI/UX, Audio & Polish</title>
+  <link rel="stylesheet" href="pertemuan5.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header class="hud-bar">
+      <div class="hud-item">
+        <span class="hud-label">SCORE</span>
+        <span id="hudScore" class="hud-value">0 / 100</span>
+      </div>
+      <div class="hud-title">CATCH THE COIN</div>
+      <div class="hud-item">
+        <span class="hud-label">TIME</span>
+        <span id="hudTime" class="hud-value">60s</span>
+      </div>
+    </header>
+
+    <div class="stage-wrapper">
+      <canvas id="gameCanvas" width="800" height="500"></canvas>
+
+      <div id="startScreen" class="screen-overlay">
+        <h1>CATCH THE COIN</h1>
+        <p class="instruction">Gerakkan kotak dengan tombol <strong>Arrow Keys</strong> atau <strong>WASD</strong>.</p>
+        <ul class="rules-list">
+          <li>Ambil Koin Emas: +20 Poin</li>
+          <li>Hindari Blok Merah: -10 Poin</li>
+          <li>Capai 100 Poin sebelum waktu 60 detik habis</li>
+        </ul>
+        <button id="startBtn" class="btn btn-primary">START GAME</button>
+      </div>
+
+      <div id="endScreen" class="screen-overlay hidden">
+        <h1 id="endTitle">GAME OVER</h1>
+        <p id="endSummary" class="instruction">Skor Akhir: 0</p>
+        <button id="restartBtn" class="btn btn-accent">RESTART GAME</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="pertemuan5.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0d1117;
+  color: #f0f6fc;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.game-shell {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hud-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background: #161b22;
+  border: 2px solid #30363d;
+  border-radius: 10px;
+}
+
+.hud-title {
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #58a6ff;
+}
+
+.hud-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hud-label {
+  font-size: 0.75rem;
+  color: #8b949e;
+  letter-spacing: 1px;
+}
+
+.hud-value {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.hud-value.warning {
+  color: #ff5555;
+}
+
+.stage-wrapper {
+  position: relative;
+  width: 800px;
+  height: 500px;
+}
+
+canvas {
+  display: block;
+  border: 3px solid #30363d;
+  border-radius: 10px;
+  background: #141923;
+}
+
+.screen-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 32px;
+  text-align: center;
+  background: rgba(13, 17, 23, 0.88);
+  border-radius: 10px;
+}
+
+.screen-overlay h1 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  color: #00e676;
+}
+
+.screen-overlay h1.lose {
+  color: #ff5555;
+}
+
+.instruction {
+  font-size: 1.05rem;
+  color: #c9d1d9;
+}
+
+.rules-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: #8b949e;
+  font-size: 0.95rem;
+}
+
+.btn {
+  padding: 12px 32px;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.92;
+}
+
+.btn-primary {
+  background: #00e676;
+  color: #0d1117;
+}
+
+.btn-accent {
+  background: #ffab00;
+  color: #0d1117;
+}
+
+.hidden {
+  display: none;
+}
